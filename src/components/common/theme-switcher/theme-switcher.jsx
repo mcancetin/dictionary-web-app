@@ -12,7 +12,7 @@ function ThemeSwitcher() {
     });
 
     return (
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 pl-3">
             <div
                 className="relative h-7 w-12 cursor-pointer rounded-full bg-medium-gray dark:bg-vivid-purple"
                 onClick={handleToggleTheme}

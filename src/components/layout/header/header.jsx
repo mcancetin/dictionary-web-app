@@ -9,7 +9,7 @@ function Header() {
                 <img src="/images/logo.svg" alt="" />
             </div>
 
-            <div className="flex items-center gap-6 divide-x-2">
+            <div className="flex items-center divide-x-2">
                 <FontSelector />
                 <ThemeSwitcher />
             </div>
