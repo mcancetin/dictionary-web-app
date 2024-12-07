@@ -1,4 +1,4 @@
-import AudioButton from "@/components/audio-button";
+import AudioButton from "@/components/common/audio-button";
 import PropTypes from "prop-types";
 import { memo } from "react";
 
