@@ -9,8 +9,6 @@ function SearchResult({ data }) {
 
     const word = data?.[0];
 
-    console.log(word);
-
     return (
         <div className="pt-12 dark:text-white">
             <div className="flex items-center justify-between pb-10">
