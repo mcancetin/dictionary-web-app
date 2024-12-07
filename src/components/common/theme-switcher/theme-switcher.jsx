@@ -13,9 +13,6 @@ function ThemeSwitcher() {
 
     return (
         <div className="flex items-center gap-4">
-            <div>
-                <img src={`/images/icon-sun-${theme}.svg`} alt="" />
-            </div>
             <div
                 className="relative h-7 w-12 cursor-pointer rounded-full bg-medium-gray dark:bg-vivid-purple"
                 onClick={handleToggleTheme}
