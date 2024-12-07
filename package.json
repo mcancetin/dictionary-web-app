@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "dictionary-web-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,8 +12,13 @@
     "test:ui": "vitest --ui"
   },
   "dependencies": {
+    "axios": "^1.7.9",
+    "classnames": "^2.5.1",
+    "lucide-react": "^0.468.0",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "use-debounce": "^10.0.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",
