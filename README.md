@@ -1,41 +1,37 @@
-# React Starter Template
+# Frontend Mentor - Frontend quiz app solution
 
-This project allows users to quickly start a React project without dealing with configurations for React, Vite, ESLint, Prettier, TailwindCSS, and Vitest.
+This is a solution to the [Dictionary web app](https://www.frontendmentor.io/challenges/dictionary-web-app-h5wwnyuKFL). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Features
+## Overview
 
--   **React**: A JavaScript library for building user interfaces.
--   **Vite**: A fast build tool and development server.
--   **ESLint**: A tool for identifying and fixing problems in JavaScript code.
--   **Prettier**: An opinionated code formatter.
--   **TailwindCSS**: A utility-first CSS framework.
--   **Vitest**: A Vite-native unit test framework.
+### The challenge
 
-### Prerequisites
+Users should be able to:
 
-Make sure you have [Node.js](https://nodejs.org/) installed.
+- Search for words using the input field
+- See the Free Dictionary API's response for the searched word
+- See a form validation message when trying to submit a blank form
+- Play the audio file for a word when it's available
+- Switch between serif, sans serif, and monospace fonts
+- Switch between light and dark themes
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+- Bonus: Have the correct color scheme chosen for them based on their computer preferences. Hint: Research prefers-color-scheme in CSS.
 
-### Project Structure
+### Links
 
--   [src/](src/): Contains the source code.
+- Solution URL: [https://www.frontendmentor.io/solutions/dictionary-web-app-UE5Svc0umn](https://www.frontendmentor.io/solutions/dictionary-web-app-UE5Svc0umn)
+- Live Site URL: [https://dictionary-web-app-khaki-nine.vercel.app/](https://dictionary-web-app-khaki-nine.vercel.app/)
 
-    -   [`App.jsx`](src/App.jsx): Main application component.
-    -   [`main.jsx`](src/main.jsx): Entry point of the application.
-    -   [`assets/`](src/assets/): Static assets like images and fonts.
-    -   [`index.css`](src/index.css): Global CSS file.
-    -   [tests/](src/tests/): Contains unit tests.
-        -   [`App.test.jsx`](src/tests/App.test.jsx): Unit tests for `App.jsx`.
-        -   [`setup.js`](src/tests/setup.js): Test setup file.
+### Built with
 
--   [public/](public/): Contains static files that are served directly.
+- React
+- Tailwind CSS
+- Mobile-first workflow
 
--   Configuration files:
-    -   [`.prettierrc`](.prettierrc): Prettier configuration.
-    -   [`eslint.config.js`](eslint.config.js): ESLint configuration.
-    -   [`tailwind.config.js`](tailwind.config.js): TailwindCSS configuration.
-    -   [`vite.config.js`](vite.config.js): Vite configuration.
-    -   [`postcss.config.js`](postcss.config.js): PostCSS configuration.
+## Author
 
-## License
-
-This project is licensed under the MIT License.
+- GitHub - [@mcancetin](https://github.com/mcancetin)
+- Frontend Mentor - [@mcancetin](https://www.frontendmentor.io/profile/mcancetin)
+- Twitter - [@mccdev\_](https://twitter.com/mccdev_)
+- LinkedIn - [Muhammed Can Çetin](https://www.linkedin.com/in/mcancetin/)
