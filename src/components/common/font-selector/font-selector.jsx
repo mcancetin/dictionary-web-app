@@ -5,6 +5,7 @@ function FontSelector({ className }) {
     const { fontStyle, setFontStyle } = useTheme();
     return (
         <select
+            name="fontStyle"
             value={fontStyle}
             onChange={(e) => setFontStyle(e.target.value)}
             className={`bg-white px-2 text-dark-gray dark:bg-blackish dark:text-white ${className}`}
