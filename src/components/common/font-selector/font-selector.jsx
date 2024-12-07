@@ -5,8 +5,11 @@ function FontSelector({ className }) {
     const { fontStyle, setFontStyle } = useTheme();
     return (
         <>
-            <label htmlFor="fontStyle"></label>
+            <label htmlFor="fontStyle" className="sr-only">
+                Choose Font Style
+            </label>
             <select
+                title="Font Style"
                 id="fontStyle"
                 name="fontStyle"
                 value={fontStyle}
