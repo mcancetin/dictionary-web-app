@@ -12,29 +12,27 @@ function AudioButton({ url }) {
         const audio = new Audio(url);
         audioRef.current = audio;
 
-        const handlePlay = () => setIsPlaying(true);
-        const handleEnded = () => setIsPlaying(false);
+        const handleStart = () => setIsPlaying(true);
+        const handleEnd = () => setIsPlaying(false);
 
-        audio.addEventListener("play", handlePlay);
-        audio.addEventListener("ended", handleEnded);
+        audio.addEventListener("play", handleStart);
+        audio.addEventListener("pause", handleEnd);
 
         return () => {
-            audio.removeEventListener("play", handlePlay);
-            audio.removeEventListener("ended", handleEnded);
+            audio.removeEventListener("play", handleStart);
+            audio.removeEventListener("pause", handleEnd);
         };
     }, [url]);
+
+    if (!url) return null;
 
     const handleClick = () => {
         if (!audioRef.current) return;
 
-        if (isPlaying) {
-            audioRef.current.pause();
-        } else {
+        if (!isPlaying) {
             audioRef.current.play();
         }
     };
-
-    if (!url) return null;
 
     return (
         <button
@@ -43,6 +41,7 @@ function AudioButton({ url }) {
             className="group rounded-full bg-vivid-purple/40 p-6 transition-colors duration-100 hover:bg-vivid-purple"
         >
             <Play
+                role="img"
                 size={28}
                 className="fill-vivid-purple text-vivid-purple group-hover:fill-white group-hover:text-white"
             />
@@ -51,7 +50,7 @@ function AudioButton({ url }) {
 }
 
 AudioButton.propTypes = {
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string,
 };
 
 export default AudioButton;

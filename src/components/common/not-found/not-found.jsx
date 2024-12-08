@@ -2,6 +2,8 @@ import { memo } from "react";
 import PropTypes from "prop-types";
 
 function NotFound({ error }) {
+    if (!error || Object.keys(error).length === 0) return null;
+
     return (
         <div className="pt-32 text-center">
             <span className="block pb-11 text-6xl">😕</span>

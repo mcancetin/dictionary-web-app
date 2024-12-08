@@ -19,7 +19,7 @@ function SearchBar({ search, handleSearch, loading }) {
                     onChange={handleSearch}
                     placeholder="Search for any word…"
                 />
-                <LoaderCircle className={loadingClass} />
+                <LoaderCircle role="img" className={loadingClass} />
             </div>
         </>
     );
